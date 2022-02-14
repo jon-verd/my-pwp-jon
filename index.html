@@ -16,7 +16,7 @@
 
 <!--  ** Main Jumbotron **  -->
 <div class="container-fluid p-3 p-md-5">
-    <div class="jumbotron border-secondary rounded-right bg-secondary text-dark bg-gradient-dark col-md-8 mb-4">
+    <div class="jumbotron border-secondary rounded bg-secondary text-dark bg-gradient-dark col-md-8 mb-4">
         <div class="p-5 m-5">
             <h1 class="display-2 fw-bold f1-l">Hi,</h1>
 <!--            I would like a hover feature here that makes it so that whenever I hover of this box, the Hi changes to other greetings such as "Hey, Hello, Whatsup?, Yo!, Hola, etc.-->
@@ -86,15 +86,19 @@
 <!--    Capstone Description -->
     <div>
         <p id="capstone-ipsum" class="col-md-6 container-fluid text-secondary fw-bold text-justify align-right">
-            Interaction design sales alpha user experience research & development. Customer technology metrics ecosystem channels pivot churn rate mass market research & development funding startup niche market leverage twitter. Infographic marketing niche market launch party business model canvas stock accelerator bootstrapping A/B testing strategy handshake partner network founders vesting period. IPad scrum project early adopters product management mass market. Churn rate technology series A financing monetization bandwidth infographic MVP twitter pivot. Graphical user interface user experience crowdsource buzz accelerator research & development advisor hypotheses strategy churn rate incubator partner network pitch. Assets lean startup buzz rockstar conversion virality deployment gamification backing return on investment handshake value proposition user experience burn rate. Partner network beta direct mailing deployment early adopters startup ramen client research & development user experience iPhone paradigm shift business model canvas. Advisor startup value proposition infographic. Social media paradigm shift innovator niche market facebook research & development.
+            For our capstone project my team decided to build a website which allowed for users to share tools with others who did not have said tools readily available. The problem we were trying to solve
         </p>
     </div>
 <!--    Capstone Preview/Image-->
     <div class="container-fluid">
         <img src="public_html/documentation/milestone-2-wireframes/braun-radio.png" class="img-fluid" width="100%" height="250"/>
     </div>
-    <div>
-<!--        Here I will put a bar which appears at the bottom of the image-->
+    <div class="container-fluid p-3 p-md-5">
+        <div class="jumbotron border-secondary rounded bg-secondary text-dark bg-gradient-dark mb-4">
+            <div class="p-3 m-3">
+                <h1 class="display-2 fw-bold f1-l"></h1>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -113,23 +117,45 @@
     </div>
 <!--    Form-->
     <div class="container-fluid col-md-6 align-left">
-        <div class="mb-3">
-            <label class="form-label text-secondary fw-bold">Message:</label>
-            <input type="text" class="form-control form-control-lg" placeholder="Type your message here.">
-        </div>
-        <div class="mb-3">
-            <label class="form-label text-secondary fw-bold">Email:</label>
-            <input type="email" class="form-control form-control-lg">
-            <div class="form-text">How can I reach you?</div>
-        </div>
-        <button type="submit" class="btn btn-secondary">Submit</button>
+        <form action="" method="post" id="contact" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label text-secondary fw-bold">Name:
+                    <input name="name" id="name" type="text" class="form-control form-control-lg" placeholder="Your Name.">
+                </label>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label text-secondary fw-bold">Email:</label>
+                <input  id="email" type="email" class="form-control form-control-lg" placeholder="Your Email.">
+    <!--            <div class="form-text">How can I reach you?</div>-->
+            </div>
+
+            <div class="mb-3">
+                <label for="subject" class="form-label text-secondary fw-bold">Subject:</label>
+                <input id="subject" type="text" class="form-control form-control-lg" placeholder="Subject">
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label text-secondary fw-bold">Message:</label>
+                <input id="message" type="text" class="form-control form-control-lg" placeholder="Type your message here.">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+
+        <div id="output-area"></div>
     </div>
 </div>
 
 
+<!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<!--Bootstrap with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+<!--Connecting to JS file-->
+    <script src="script.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
