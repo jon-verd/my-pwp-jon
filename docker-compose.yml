@@ -1,0 +1,21 @@
+version: '3'
+services:
+  backend:
+    build: ./src
+    container_name: 'backend'
+    env_file:
+      - ./src/.env
+    ports:
+      - 8080:4200
+    user: "node"
+    volumes:
+      - ./src:/home/node/app/src
+      - ./src/tsconfig.json:/home/node/app/tsconfig.json
+  frontend:
+    container_name: 'frontend'
+    build: ./public_html
+    ports:
+      - '80:80'
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - ./public_html:/usr/share/nginx/html

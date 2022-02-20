@@ -1,11 +1,13 @@
+
+// Contact form JS
 $(document).ready(function() {
     $('#contact').validate({
         debug: true,
         errorClass: 'alert alert-danger',
         ErrorLabelContainer: '#output-area',
         errorElement: 'div',
-        // ruels here define what is good or bad input
-        // each rule satrts with the form input elements NAME attrivbrute
+        // rules here define what is a good or bad input
+        // each rule starts with the form input elements NAME attribute
         rules : {
             name : {
                 required: true
@@ -33,7 +35,7 @@ $(document).ready(function() {
             }
         },
         submitHandler: (form) => {
-            $('#contact')ajaxSubmit({
+            $('#contact').ajaxSubmit({
                 type: 'POST',
                 url: $('#contact').attr('action'),
                 success: (ajaxOutput) => {
@@ -50,3 +52,5 @@ $(document).ready(function() {
         }
     })
 })
+
+// Website-Design CSS

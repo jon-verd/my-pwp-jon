@@ -16,7 +16,7 @@
 
 <!--  ** Main Jumbotron **  -->
 <div class="container-fluid p-3 p-md-5">
-    <div class="jumbotron border-secondary rounded bg-secondary text-dark bg-gradient-dark col-md-8 mb-4">
+    <div id="heading" class="jumbotron border-secondary rounded col-md-8 mb-4">
         <div class="p-5 m-5">
             <h1 class="display-2 fw-bold f1-l">Hi,</h1>
 <!--            I would like a hover feature here that makes it so that whenever I hover of this box, the Hi changes to other greetings such as "Hey, Hello, Whatsup?, Yo!, Hola, etc.-->
@@ -34,7 +34,7 @@
         <p class = "text-secondary">Name is</p>
     </div>
     <div class="row p-3 display-1 fw-bold">
-        <p style="color: cadetblue">Jonathan</p>
+        <p id="subHeading">Jonathan</p>
     </div>
 </div>
 
@@ -46,9 +46,9 @@
 <!--  ** About Me Section: Highlighting myself ** -->
 <div id="picture space " class="mt-5">
     <div class="container-fluid p-3 p-md-5">
-        <div class="jumbotron border-secondary rounded-right bg-secondary text-dark bg-gradient-dark col-md-8 mb-4">
+        <div id="heading" class="jumbotron border-secondary rounded-right col-md-8 mb-4">
             <div class="p-5 m-5">
-                <h1 class="display-2 fw-bold f1-l">About Me</h1>
+                <h1 id="headingAboutMe" class="display-2 fw-bold f1-l">About Me</h1>
                 <!-- I would like a hover feature here that makes it so that whenever I hover of this box, random pictures of me appear and are rotated in random directions-->
             </div>
         </div>
@@ -57,11 +57,25 @@
     <div id="spaceBetweenSections" class="m-5 p-5"></div>
 </div>
 <div class="row p-3 p-md-5 display-1 fw-bold">
-    <p style="color: cadetblue">Bio</p>
+    <p id="subHeading">Bio</p>
 </div>
 <div>
-    <p id="bio-ipsum" class="col-md-6 container-fluid text-secondary fw-bold text-justify align-right">
-        Interaction design sales alpha user experience research & development. Customer technology metrics ecosystem channels pivot churn rate mass market research & development funding startup niche market leverage twitter. Infographic marketing niche market launch party business model canvas stock accelerator bootstrapping A/B testing strategy handshake partner network founders vesting period. IPad scrum project early adopters product management mass market. Churn rate technology series A financing monetization bandwidth infographic MVP twitter pivot. Graphical user interface user experience crowdsource buzz accelerator research & development advisor hypotheses strategy churn rate incubator partner network pitch. Assets lean startup buzz rockstar conversion virality deployment gamification backing return on investment handshake value proposition user experience burn rate. Partner network beta direct mailing deployment early adopters startup ramen client research & development user experience iPhone paradigm shift business model canvas. Advisor startup value proposition infographic. Social media paradigm shift innovator niche market facebook research & development.
+    <p id="bio" class="col-md-6 container-fluid text-secondary fw-bold text-justify align-right">     Since a young age I have been infatuated with technology. I see computers as revolutionary tools which have the power to transform all aspects of society. My goal is to master this tool and build things others find useful. My passion for technology has led me to study full stack web development at CNM Ingenuity's Deep Dive Coding Camp. Deep Dive is a full time (400 hours), remote and totally immersive fullstack development experience. I'm grateful to have the opportunity to learn from so many talented peers, instructors and alumni.
+<br />
+        <br />
+        <u> The following are a few of the technologies I have studied and used in my projects. </u>
+<br />
+        <br />
+        <strong class="tab">Front End Development</strong> : Javascript, React, Bootstrap, HTML5, CSS3
+        <br />
+        <strong class="tab">Back End Development</strong> : Node.js, MySQL, Express.js, Typescript, Docker
+        <br />
+        <strong class="tab">UI/UX Design</strong> : Figma, ERD Visualization, REST API Diagrams, Dieter Rams' principles of good design.
+        <br />
+        <strong class="tab">Project Management Tools</strong> : Git Version Control, GitHub, Agile Project Management
+<br />
+        <br />
+             Personally, I have a wide range of interests including but not limited to new technologies, geopolitics, books, finance, music and the outdoors. I am the son of two immigrant parents and a proud Dreamer - born in Colima, MX and raised in New Mexico. This has contributed to my worldview significantly, I consider myself to be an open-minded, creative and passionate individual. I enjoy teaching myself new skills and sharing a warm cup of coffee with friends. Feel free to reach out if you have any questions or are just looking to say hi!
 
     </p>
 </div>
@@ -74,27 +88,27 @@
 <!--  ** Works Section: Highlighting my projects ** -->
 <div>
     <div class="container-fluid p-3 p-md-5">
-        <div class="jumbotron border-secondary rounded-right bg-secondary text-dark bg-gradient-dark col-md-8 mb-4">
+        <div id="heading" class="jumbotron border-secondary rounded-right col-md-8 mb-4">
             <div class="p-5 m-5">
                 <h1 class="display-2 fw-bold f1-l"> Works</h1>
             </div>
         </div>
     </div>
     <div class="row p-3 p-md-5 display-3 fw-bold">
-        <p style="color: cadetblue">Capstone</p>
+        <p id="subHeading">Capstone</p>
     </div>
 <!--    Capstone Description -->
     <div>
-        <p id="capstone-ipsum" class="col-md-6 container-fluid text-secondary fw-bold text-justify align-right">
-            For our capstone project my team decided to build a website which allowed for users to share tools with others who did not have said tools readily available. The problem we were trying to solve
+        <p id="capstoneBody" class="col-md-6 container-fluid text-secondary fw-bold text-justify align-right">
+            For our capstone project my team decided to build a website which allowed for users to share tools with others who did not have said tools readily available. We realized that people often had to buy expensive tools for a specific project and
         </p>
     </div>
 <!--    Capstone Preview/Image-->
     <div class="container-fluid">
-        <img src="public_html/documentation/milestone-2-wireframes/braun-radio.png" class="img-fluid" width="100%" height="250"/>
+        <img src="documentation/milestone-2-wireframes/braun-radio.png" class="img-fluid" width="100%" height="250"/>
     </div>
     <div class="container-fluid p-3 p-md-5">
-        <div class="jumbotron border-secondary rounded bg-secondary text-dark bg-gradient-dark mb-4">
+        <div id="heading" class="jumbotron border-secondary rounded  text-dark bg-gradient-dark mb-4">
             <div class="p-3 m-3">
                 <h1 class="display-2 fw-bold f1-l"></h1>
             </div>
@@ -109,7 +123,7 @@
 <!--  ** Contact Section **  -->
 <div>
     <div class="container-fluid p-3 p-md-5">
-        <div class="jumbotron border-secondary rounded-right bg-secondary text-dark bg-gradient-dark col-md-8 mb-4">
+        <div id="heading" class="jumbotron border-secondary rounded-right col-md-8 mb-4">
             <div class="p-5 m-5">
                 <h1 class="display-2 fw-bold f1-l"> Contact</h1>
             </div>
@@ -117,7 +131,7 @@
     </div>
 <!--    Form-->
     <div class="container-fluid col-md-6 align-left">
-        <form action="" method="post" id="contact" novalidate>
+        <form action="./apis/" method="post" id="contact" novalidate>
             <div class="mb-3">
                 <label for="name" class="form-label text-secondary fw-bold">Name:
                     <input name="name" id="name" type="text" class="form-control form-control-lg" placeholder="Your Name.">
@@ -126,36 +140,49 @@
 
             <div class="mb-3">
                 <label for="email" class="form-label text-secondary fw-bold">Email:</label>
-                <input  id="email" type="email" class="form-control form-control-lg" placeholder="Your Email.">
+                <input name="email"  id="email" type="email" class="form-control form-control-lg" placeholder="Your Email.">
     <!--            <div class="form-text">How can I reach you?</div>-->
             </div>
 
             <div class="mb-3">
                 <label for="subject" class="form-label text-secondary fw-bold">Subject:</label>
-                <input id="subject" type="text" class="form-control form-control-lg" placeholder="Subject">
+                <input name="subject" id="subject" type="text" class="form-control form-control-lg" placeholder="Subject">
             </div>
 
             <div class="mb-3">
                 <label for="message" class="form-label text-secondary fw-bold">Message:</label>
-                <input id="message" type="text" class="form-control form-control-lg" placeholder="Type your message here.">
+                <input name="message" id="message" type="text" class="form-control form-control-lg" placeholder="Type your message here.">
             </div>
-
+            <div class="g-recaptcha" data-sitekey="6LcOynoeAAAAADDUeBKZqV8KKMDmJPHCpKEaeVUu"></div>
             <button type="submit" class="btn btn-secondary">Submit</button>
+
         </form>
 
         <div id="output-area"></div>
     </div>
 </div>
 
+<!--Font Awesome for Icons-->
+<script src="https://kit.fontawesome.com/49ad91d70e.js" crossorigin="anonymous"></script>
 
 <!--Jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
 <!--Bootstrap with Popper-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 <!--Connecting to JS file-->
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
+
+<!--Connecting to ReCaptcha-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 </html>

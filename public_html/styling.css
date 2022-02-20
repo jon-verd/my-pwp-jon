@@ -1,0 +1,19 @@
+#body {
+  font-family: "Darker Grotesque", sans-serif !important;
+}
+/*Tab Class*/
+.tab { margin-left: 40px; }
+
+/*# sourceMappingURL=styling.css.map */
+#spaceBetweenSections {
+  height: 15em;
+}
+
+#heading {
+  background-color: rgba(110,113,196,77);
+  color: rgba(29,29,31,12);
+}
+
+#subHeading {
+  color: rgba(145,135,96,57);
+}
