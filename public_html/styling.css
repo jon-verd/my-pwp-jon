@@ -9,11 +9,53 @@
   height: 15em;
 }
 
-#heading {
-  background-color: rgba(110,113,196,77);
-  color: rgba(29,29,31,12);
+/*text coloring*/
+.header-colors {
+  background-color: #4D6F73;
+  color: whitesmoke;
 }
 
-#subHeading {
+.text-golden {
   color: rgba(145,135,96,57);
 }
+
+
+
+
+/*Link Styles*/
+a:link {
+  color: rgba(145,135,96,57);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(145,135,96,57);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkgray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: darkgray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*Image Thmbnail Border Color   doesnt work :( */
+.img-thumbnail {
+  border-color: rgba(145,135,96,57);
+  thumbnail-border-color: rgba(145,135,96,57);
+  color: rgba(145,135,96,57);
+}
+
+/*Image Sizing*/
+/*img.resize {*/
+/*  max-width:50%;*/
+/*  max-height:100%;*/
+/*}*/
