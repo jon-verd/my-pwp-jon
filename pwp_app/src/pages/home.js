@@ -1,21 +1,21 @@
-import React from 'react'
+import * as React from 'react'
 import {Container, Row, Col, Image, NavLink, FormLabel} from "react-bootstrap";
 
 
 export function Home() {
     return (
         <>
-            <body className="bg-dark">
+            <div className={"bg-dark"}>
 
             { /*  ** Main Jumbotron **  */}
             <Container className={'p-3 p-sm-5'}>
-                <div id="headingIntro" className="header-colors jumbotron border-secondary rounded col-sm-8 mb-4">
-                    <div className="p-5 m-5">
+                <Col id="headingIntro" className="header-colors jumbotron border-secondary rounded col-sm-8 mb-4">
+                    <Row className="p-5 m-5">
                         <h1 className="display-2 fw-bold f1-l">Hi,</h1>
                         { /*            I would like a hover feature here that makes it so that whenever I hover of this box, the Hi changes to other greetings such as "Hey, Hello, Whatsup?, Yo!, Hola, etc.*/}
                         <h3 className="fw-bold mt-4 display-5">welcome to my portfolio</h3>
-                    </div>
-                </div>
+                    </Row>
+                </Col>
             </Container>
 
             { /* Introduction Text*/}
@@ -258,8 +258,7 @@ export function Home() {
             { /*Connecting to ReCaptcha*/}
             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-            </body>
+            </div>
         </>
     )
 }
-export default Home
